@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Transiciones suaves para el header */
+header {
+    transition: background-color 0.3s ease, color 0.3s ease, height 0.3s ease;
+}
+
+header nav ul {
+    transition: color 0.3s ease;
+}
+
+#hamburgerBtn 
+{
+    transition: all 0.3s ease;
+}
+
+/* Estilos cuando se hace scroll */
+header.scrolled {
+    background: #102032 !important;
+    color: white !important;
+    height: 48px !important;
+    top: -1px !important;
+
+}
+
+header nav ul.scrolled {
+    color: white !important;
+    font-weight: 300;
+}
+
+header span img:first-child.scrolled {
+    filter: brightness(5) hue-rotate(45deg) !important;
+}
+
+header span img:last-child.scrolled {
+    filter: brightness(5) !important;
+}
+
+.text-short, .text-extended {
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+@media (max-width: 767px) {
+    header nav ul.scrolled
+    {
+        background: #102032;
+        height: calc(100vh - 48px);
+    }
+
+    #hamburgerBtn.scrolled 
+    {
+        top: 7px;
+    }
+}

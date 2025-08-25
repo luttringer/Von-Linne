@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Title</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="dist/styles.min.css">
+    </head>
+    <body>
+        <header class="block bg-[#ffffffd1] fixed z-20 w-full h-16 md:flex px-0 md:px-[20%] justify-around">
+            <span class="flex h-full justify-center items-center gap-x-6"><img class="h-3/6 md:h-4/6 brightness-50" src="src/images/logos/udelar.png" alt=""><img class="h-3/6 md:h-4/6" src="src/images/logos/urbe.png" alt=""></span>
+
+            <button  id="hamburgerBtn"  class="md:hidden fixed top-4 right-6 z-50 w-8 h-8 flex flex-col justify-center items-center space-y-1 focus:outline-none" aria-label="Toggle menu">
+                <span class="hamburger-line block w-6 h-0.5 bg-gray_three transition-all duration-300 ease-in-out"></span>
+                <span class="hamburger-line block w-6 h-0.5 bg-gray_three transition-all duration-300 ease-in-out"></span>
+                <span class="hamburger-line block w-6 h-0.5 bg-gray_three transition-all duration-300 ease-in-out"></span>
+            </button>
+                
+            <nav class="h-full">
+                <ul id="mobileMenu" class="transform md:transform-none translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out md:transition-none w-[80%] md:w-auto h-[calc(100vh-64px)] bg-[#ffffffee] md:bg-inherit ml-[20%] md:ml-0 flex-col md:flex-row justify-center md:justify-normal gap-y-4 md:gap-y-0 flex md:h-full items-center gap-x-7 font-josefin text-gray_three font-normal cursor-pointer">
+                    <li class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">Home</li>
+                    <li class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">Investigación y Desarrollo</li>
+                    <li class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">Cursos</li>
+                    <li class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">GROBO</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- banner top index -->
+            <section class="items-center h-[100vh] w-full flex justify-center md:items-end relative" style="background-image: url(src/images/2148205042.jpg); background-size: cover;">
+                <div class="bg-[#ffffff33] p-5 w-4/5 block md:p-0 md:bg-transparent font-josefin text-center z-10 md:w-1/2 md:mb-[10%] md:flex flex-col justify-center items-center gap-y-5">
+                    <p class="bg-transparent font-light text-yellow_one md:bg-gray_four py-1 px-4">UDELAR | Facultad de Medicina - URBE</p>
+                    <h1 class="bg-transparent text-white text-3xl md:bg-gray_four py-1 px-4">Unidad de Reactivos y Biomodelos de Experimentación</h1>
+                </div>
+            </section>
+
+            <!-- galeria de noticias -->
+            <section class="px-[10%] w-full container m-auto flex flex-col justify-center items-center py-12 md:px-16 max-w-5xl">
+                <h2 class="text-center font-josefin text-green_one text-2xl font-semibold m-5">Noticias y novedades en URBE</h2>
+                
+                <p class="font-josefin font-light text-[17px] text-gray_three text-center">
+                    Mantente al día con las últimas actualizaciones de nuestra unidad. Aquí encontrarás información sobre nuevos cursos y capacitaciones, novedades de GROBO (nuestra plataforma de gestión de reactivos biológicos), noticias relevantes de UdelaR y Facultad de Medicina, actualizaciones de precios y servicios, así como información general sobre el funcionamiento de bioterios y actividades de la URBE. Un espacio centralizado para estar informado sobre todo lo que acontece en nuestra comunidad académica y científica.
+                </p>
+
+                <div class="w-full flex flex-col md:grid md:grid-cols-[40%_20%_40%] mt-10 gap-5" style="grid-template-areas:'uno dos dos''tres tres tres''cuatro cuatro cinco';">
+                    <div class="w-full h-full aspect-square relative" style="grid-area: uno;">
+                        <img class="w-full h-full object-cover" src="src/images/news/animal-1554745_1920.jpg" alt="">
+                        <div class="absolute bottom-0 left-0 right-0 h-[50%] bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
+
+                        <span class="absolute bottom-0 text-white text-sm p-4 z-10 font-semibold h-[30%] flex flex-col justify-evenly">
+                            <h3 class="text-xs">CURSO TEORICO PRACTICO DE ANIMALES DE LABORATORIO</h3>
+                            <p class="text-xs font-normal">Para acceder a información detallada sobre fechas y hora, de <a class="text-green_one" href="https://www.urbefmed.org/dinamica/assets/imagenes/pdf/charlas%20on%20line%202023.pdf">click aquí</a>.</p>
+                        </span>
+                    </div>
+
+                    <div class="w-full h-full relative" style="grid-area: dos;">
+                        <img class="w-full h-full object-cover" src="src/images/news/sale-3112120_1920.jpg" alt="">
+                        <div class="absolute bottom-0 left-0 right-0 h-[50%] bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
+
+                        <span class="absolute bottom-0 text-white text-sm p-4 z-10 font-semibold h-[30%] flex flex-col justify-evenly">
+                            <h3 class="text-xs">NUEVOS PRECIOS QUE RIGEN A PARTIR DE 2024</h3>
+                            <p class="text-xs font-normal">Conozca la nueva franja de precios de alojamiento y alimentación en URBE. <a class="text-green_one" href="">Click aquí</a>.</p>
+                        </span>
+                    </div>
+
+                    <div class="w-full h-full relative aspect-square md:aspect-[2/1] " style="grid-area: tres;">
+                        <img class="w-full h-full object-cover" src="src/images/news/2632 (1).jpg" alt="">
+                        <div class="absolute bottom-0 left-0 right-0 h-[50%] bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
+
+                        <span class="absolute bottom-0 text-white text-sm p-4 z-10 font-semibold h-[50%] md:h-[30%] flex flex-col justify-evenly">
+                            <h3 class="text-xs">CONVOCATORIA A REGISTRO DE ASESORES LOCALES Y REGIONALES</h3>
+                            <p class="text-xs font-normal">Se difunde convocatoria a registro de asesores locales y regionales para realizar tareas de monitoreo de instituciones registradas ante la Comisión Nacional de Experimentación Animal (CNEA). <a class="text-green_one" href="">LINK DOCUMENTACION</a>.</p>
+                        </span>
+                    </div>
+
+
+                    <div class="w-full h-full relative aspect-square md:aspect-auto" style="grid-area: cuatro;">
+                        <img class="w-full h-full object-cover" src="src/images/news/X_1-1170x700.png" alt="">
+                        <div class="absolute bottom-0 left-0 right-0 h-[50%] bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
+
+                        <span class="absolute bottom-0 text-gray_two bg-white text-sm p-4 z-10 font-semibold h-[30%] flex flex-col justify-evenly">
+                            <h3 class="text-xs">NUEVA ESCALA DE CALIFICACIONES EN UDELAR</h3>
+                            <p class="text-xs font-normal">Visita la cartelera de noticias de FMED para conocer más sobre la nueva escala de calificaciones. <a class="text-green_one" href="https://cartelera.fmed.edu.uy/nueva-escala-de-calificaciones/">CLICK AQU</a>.</p>
+                        </span>
+                    </div>
+
+
+                    <div class="w-full h-full aspect-square relative" style="grid-area: cinco;">
+                        <img class="w-full h-full object-cover" src="src/images/news/121221.jpg" alt="">
+                        <div class="absolute bottom-0 left-0 right-0 h-[50%] bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
+
+                        <span class="absolute bottom-0 text-white text-sm p-4 z-10 font-semibold h-[30%] flex flex-col justify-evenly">
+                            <h3 class="text-xs">REGISTRO DE USUARIOS PARA WEB APP GROBO</h3>
+                            <p class="text-xs font-normal">Accede a un completo manual de registro y acceso a GROBO, te esperamos. <a class="text-green_one" href="">LINK DOCUMENTACION</a>.</p>
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- frase -->
+            <section class="w-full flex flex-col justify-center items-center bg-lavanda_one py-28 px-[10%] md:px-[25%] gap-y-10">
+                <img src="src/images/icons/quote (1).png" alt="">
+                <p class="font-josefin text-[#A1A1A1] font-light text-2xl text-center">"El objetivo final debe ser la eliminación completa del uso de animales en experimentos, pero mientras tanto debemos reducir al mínimo el sufrimiento animal."</p>
+                <p class="text-green_one font-josefin font-bold text-sm text-center">William Russell y Rex Burch (creadores del principio de las 3 R's).</p>
+            </section>
+
+            <!-- personal -->
+            <section class="w-full py-16 px-[10%]">
+                <div class="max-w-7xl mx-auto">
+                    <h2 class="font-josefin text-green_one text-2xl font-semibold m-5 text-center">Conocé nuestro equipo de trabajo</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                        <!-- Dr. Martín Breijo -->
+                        <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                            <div class="w-1/2 aspect-square md:aspect-square md:w-24 md:h-24 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
+                                <img class="w-full h-full object-cover" src="src/images/personal/martin.jpg">
+                            </div>
+                            <h3 class="font-semibold text-lg mb-1">Dr. Martín Breijo Dotta</h3>
+                            <p class="text-sm text-gray-600 mb-2">DMTV, Msc, PhD</p>
+                            <p class="text-sm font-medium text-blue-600 mb-2">Profesor Agregado</p>
+                            <a href="mailto:mbreijo@fmed.edu.uy" class="text-xs text-gray-500 hover:text-blue-600 transition-colors">mbreijo@fmed.edu.uy</a>
+                        </div>
+
+                        <!-- Lic. Mariela Santos -->
+                        <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                            <div class="w-1/2 aspect-square md:aspect-square md:w-24 md:h-24 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
+                                <img class="w-full h-full object-cover" src="src/images/personal/B6B4B2.png">
+                            </div>
+                            <h3 class="font-semibold text-lg mb-1">Lic. Mariela Santos Mourin</h3>
+                            <p class="text-sm font-medium text-blue-600">Técnica Profesional</p>
+                        </div>
+
+                        <!-- Diana Matich -->
+                        <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                            <div class="w-1/2 aspect-square md:aspect-square md:w-24 md:h-24 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
+                                <img class="w-full h-full object-cover" src="src/images/personal/B6B4B2.png">
+                            </div>
+                            <h3 class="font-semibold text-lg mb-1">Diana Matich Sutil</h3>
+                            <p class="text-sm font-medium text-blue-600">Administrativa Especializado</p>
+                        </div>
+
+                        <!-- Gabriel Rocha -->
+                        <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                            <div class="w-1/2 aspect-square md:aspect-square md:w-24 md:h-24 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
+                                <img class="w-full h-full object-cover" src="src/images/personal/B6B4B2.png">
+                            </div>
+                            <h3 class="font-semibold text-lg mb-1">Gabriel Rocha Rocha</h3>
+                            <p class="text-sm font-medium text-blue-600">Preparador de Área Biológica</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <!-- Marcelo Fernández -->
+                        <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                            <div class="w-1/2 aspect-square md:aspect-square md:w-24 md:h-24 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
+                                <img class="w-full h-full object-cover" src="src/images/personal/B6B4B2.png">
+                            </div>
+                            <h3 class="font-semibold text-lg mb-1">Marcelo Fernández Lomónaco</h3>
+                            <p class="text-sm font-medium text-blue-600">Técnico Especializado</p>
+                        </div>
+
+                        <!-- Florencia Fontes -->
+                        <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                            <div class="w-1/2 aspect-square md:aspect-square md:w-24 md:h-24 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
+                                <img class="w-full h-full object-cover" src="src/images/personal/B6B4B2.png">
+                            </div>
+                            <h3 class="font-semibold text-lg mb-1">Florencia Fontes Garré</h3>
+                            <p class="text-sm font-medium text-blue-600">Preparador de Área Biológica</p>
+                        </div>
+
+                        <!-- Luis Abad -->
+                        <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                            <div class="w-1/2 aspect-square md:aspect-square md:w-24 md:h-24 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
+                                <img class="w-full h-full object-cover" src="src/images/personal/B6B4B2.png">
+                            </div>
+                            <h3 class="font-semibold text-lg mb-1">Luis Abad Quintana</h3>
+                            <p class="text-sm font-medium text-blue-600">Servicios Generales</p>
+                        </div>
+
+                        <!-- Melina Monteverde -->
+                        <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                            <div class="w-1/2 aspect-square md:aspect-square md:w-24 md:h-24 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
+                                <img class="w-full h-full object-cover" src="src/images/personal/B6B4B2.png">
+                            </div>
+                            <h3 class="font-semibold text-lg mb-1">Melina Monteverde Arechederra</h3>
+                            <p class="text-sm font-medium text-blue-600">Servicios Generales</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- contacto -->
+        <footer class="mt-28 bg-blue_one text-white font-extralight">
+            <div class=" flex flex-col items-start w-full container m-auto md:grid grid-cols-4 justify-center md:items-start gap-x-[5%] font-josefin py-10 px-[10%] md:px-0 md:py-20 max-w-[1024px]">
+                <img class="w-[60%] md:w-auto" src="src/images/logos/urbe.png" alt="">
+                <ul class="font-josefin mt-7 md:mt-0">
+                    <li class="mb-1 md:mb-5 font-normal">Sitios de interés</li>
+                    <li class="text-[13px] md:text-base">URBE</li>
+                    <li class="text-[13px] md:text-base">GROBO</li>
+                    <li class="text-[13px] md:text-base">FMED</li>
+                    <li class="text-[13px] md:text-base">UDELAR</li>
+                </ul>
+                <ul class="font-josefin mt-7 md:mt-0">
+                    <li class="mb-1 md:mb-5 font-normal">Secciones de la web</li>
+                    <li class="text-[13px] md:text-base">Home</li>
+                    <li class="text-[13px] md:text-base">Investigación y desarrollo</li>
+                    <li class="text-[13px] md:text-base">Cursos</li>
+                </ul>
+                <ul class="font-josefin mt-7 md:mt-0">
+                    <li class="mb-1 md:mb-5 font-normal">Información de contacto</li>
+                    <li class="text-[13px] md:text-base">Direccion: Gral. Flores 2125 C.P. 11800. Montevideo, Uruguay</li>
+                    <li class="text-[13px] md:text-base">Tel: 29243414 int 3226</li>
+                    <li class="text-[13px] md:text-base">urbemedicina@gmail.com</li>
+                </ul>
+            </div>
+            <div></div>
+        </footer>
+
+        <!-- control scroll-->
+        <script>
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                const ul = document.querySelector('header nav ul');
+                const logoUdelar = document.querySelector('header span img:first-child');
+                const logoUrbe = document.querySelector('header span img:last-child');
+                const hamburguesa = document.querySelector('#hamburgerBtn');
+                
+                if (window.scrollY > 200) {
+                    header.classList.add('scrolled');
+                    ul.classList.add('scrolled');
+                    logoUdelar.classList.add('scrolled');
+                    logoUrbe.classList.add('scrolled');
+                    hamburguesa.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                    ul.classList.remove('scrolled');
+                    logoUdelar.classList.remove('scrolled');
+                    logoUrbe.classList.remove('scrolled');
+                    hamburguesa.classList.remove('scrolled');
+                }
+            });
+        </script>
+
+        <!-- funcionalidad menu-->
+        <script>
+                const hamburgerBtn = document.getElementById('hamburgerBtn');
+                const mobileMenu = document.getElementById('mobileMenu');
+                const overlay = document.getElementById('overlay');
+                const hamburgerLines = document.querySelectorAll('.hamburger-line');
+                
+                let isMenuOpen = false;
+                
+                function toggleMenu() {
+                    isMenuOpen = !isMenuOpen;
+                    
+                    if (isMenuOpen) {
+                        // Abrir menú - deslizar desde la derecha
+                        mobileMenu.classList.remove('translate-x-full');
+                        mobileMenu.classList.add('translate-x-0');
+                        
+                        // Mostrar overlay
+                        overlay.classList.remove('invisible', 'opacity-0');
+                        overlay.classList.add('visible', 'opacity-100');
+                        
+                        // Animar hamburguesa a X
+                        hamburgerLines[0].classList.add('rotate-45', 'translate-y-2');
+                        hamburgerLines[1].classList.add('opacity-0');
+                        hamburgerLines[2].classList.add('-rotate-45', '-translate-y-2');
+                        
+                        // Prevenir scroll del body
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        // Cerrar menú - deslizar hacia la derecha
+                        mobileMenu.classList.remove('translate-x-0');
+                        mobileMenu.classList.add('translate-x-full');
+                        
+                        // Ocultar overlay
+                        overlay.classList.remove('visible', 'opacity-100');
+                        overlay.classList.add('invisible', 'opacity-0');
+                        
+                        // Restaurar hamburguesa
+                        hamburgerLines[0].classList.remove('rotate-45', 'translate-y-2');
+                        hamburgerLines[1].classList.remove('opacity-0');
+                        hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
+                        
+                        // Restaurar scroll del body
+                        document.body.style.overflow = 'auto';
+                    }
+                }
+                
+                // Event listeners
+                hamburgerBtn.addEventListener('click', toggleMenu);
+                overlay.addEventListener('click', toggleMenu);
+                
+                // Cerrar menú con tecla Escape
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && isMenuOpen) {
+                        toggleMenu();
+                    }
+                });
+                
+                // Cerrar menú al hacer clic en un elemento del menú (opcional)
+                mobileMenu.querySelectorAll('li').forEach(item => {
+                    item.addEventListener('click', () => {
+                        if (isMenuOpen) {
+                            toggleMenu();
+                        }
+                    });
+                });
+                
+                // Prevenir el cierre al hacer clic dentro del menú
+                mobileMenu.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+        </script>
+    </body>
+</html>
