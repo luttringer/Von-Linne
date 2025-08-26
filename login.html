@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/styles.min.css">
+</head>
+
+<body class="bg-[#f2f2f200] font-sans">
+    <main class="container mx-auto flex justify-center items-center min-h-screen p-4">
+        <section class="w-full max-w-5xl aspect-auto md:aspect-[1.5/1] bg-black p-[6px] gap-x-3 h-auto md:h-[80vh] rounded-xl flex-col md:flex-row flex shadow-2xl">
+
+            <!-- Panel Izquierdo - Branding -->
+            <div class="login-container w-full md:w-[40%] h-auto md:h-full rounded-lg flex flex-col justify-end items-center text-white p-8">
+                <div class="text-center">
+                    <h1 class="text-3xl font-bold mb-4">G.R.O.B.O.</h1>
+                    <h2 class="text-lg font-light mb-2">Gestor de Reactivos Biológicos Online</h2>
+
+                    <p class="text-[#6f6f6f] mt-6 leading-relaxed text-xs">
+                        Desarrollado por NETWISE, GROBO es una aplicación web que permite a cualquier Bioterio del país gestionar y administrar todos sus protocolos, gastos, peticiones y demás referente al uso, alojamiento y alimentación de animales. GROBO cumple con control de animales, exportación de datos y estadísticas alineadas a los últimos estandares de la CNEA.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Panel Derecho - Formulario -->
+            <div class="bg-white w-full md:w-[60%] h-auto md:h-full rounded-lg flex flex-col">
+
+                <!-- Header del formulario -->
+                <div class="p-8 pb-0">
+                    <div class="flex justify-end items-center mb-1">
+                        <span class="text-sm text-gray-600 mr-2">¿No tienes cuenta?</span>
+                        <a href="#" class="text-amber-600 hover:text-amber-700 font-medium text-sm underline">Regístrate</a>
+                    </div>
+                    <div class="flex justify-end items-center mb-8">
+                        <a href="index.html" class="text-green_one hover:text-[#102032] font-medium text-sm">&#8617; regresar a URBE</a>
+                    </div>
+                </div>
+
+                <!-- Contenido del formulario -->
+                <div class="flex-1 flex flex-col justify-center px-8 pb-8">
+                    <div class="max-w-sm mx-auto w-full">
+
+                        <div class="text-center mb-8">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-2">¡Bienvenido a GROBO!</h2>
+                            <p class="text-gray-600">Por favor ingresa tus credenciales de acceso</p>
+                        </div>
+
+                        <!-- Formulario -->
+                        <form class="space-y-4">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Usuario</label>
+                                <input type="email" id="email" name="email" placeholder="usuario de ejemplo" class="form-input w-full px-3 py-3 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500 transition-colors" required>
+                            </div>
+
+                            <div>
+                                <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Contraseña</label>
+                                <div class="relative">
+                                    <input type="password" id="password" name="password" placeholder="mínimo 8 caracteres" class="form-input w-full px-3 py-3 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500 transition-colors pr-10" required>
+                                    <button type="button" class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                        <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="login-btn w-full bg-amber-500 text-white py-3 px-4 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300">
+                                Login
+                            </button>
+
+                            <div class="text-center mt-4">
+                                <a href="#" class="text-sm text-gray-600 hover:text-amber-600">¿Olvidaste tu contraseña?</a>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="p-6 border-t border-gray-100">
+                    <div class="flex justify-between items-center text-xs text-gray-500">
+                        <span>© 2025 - 2026 NETWISE</span>
+                        <div class="space-x-4 text-right md:text-center">
+                            <a href="#" class="hover:text-gray-700">Política de Privacidad</a>
+                            <a href="#" class="hover:text-gray-700">Soporte</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+ <script>
+        /**
+         * Funcionalidad básica del formulario de login
+         * - Maneja el envío del formulario
+         * - Toggle de visibilidad de contraseña
+         * - Validaciones básicas del lado del cliente
+         */
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            const passwordInput = document.getElementById('password');
+            const togglePassword = document.querySelector('button[type="button"]');
+            
+            // Toggle para mostrar/ocultar contraseña
+            if (togglePassword) {
+                togglePassword.addEventListener('click', function() {
+                    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                    passwordInput.setAttribute('type', type);
+                    
+                    // Cambiar el ícono
+                    const icon = this.querySelector('svg');
+                    if (type === 'text') {
+                        icon.innerHTML = `
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.878 9.878L3 3m6.878 6.878L21 21" />
+                        `;
+                    } else {
+                        icon.innerHTML = `
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        `;
+                    }
+                });
+            }
+            
+            // Manejo del formulario
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Aquí puedes agregar tu lógica de autenticación
+                // Por ejemplo, llamada AJAX a tu backend de WordPress
+                const formData = new FormData(form);
+                const email = formData.get('email');
+                const password = formData.get('password');
+                
+                console.log('Intentando login con:', { email, password });
+                
+                // Ejemplo de como podrías integrarlo con WordPress via AJAX
+                /*
+                fetch(ajax_object.ajax_url, {
+                    method: 'POST',
+                    body: new FormData().append('action', 'custom_login'),
+                    // ... resto de la implementación
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        window.location.href = data.redirect_url;
+                    } else {
+                        // Mostrar error
+                    }
+                });
+                */
+            });
+        });
+    </script>
+
+</html>

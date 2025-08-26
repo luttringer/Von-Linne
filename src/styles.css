@@ -35,7 +35,7 @@ header span img:first-child.scrolled {
 }
 
 header span img:last-child.scrolled {
-    filter: brightness(5) !important;
+    filter: brightness(5) sepia(1) grayscale(1) !important;
 }
 
 .text-short, .text-extended {
@@ -55,3 +55,28 @@ header span img:last-child.scrolled {
         top: 7px;
     }
 }
+
+
+
+
+
+/* Estilos personalizados para el formulario de login inspirado en el diseño Orion */
+        .login-container {
+            background: linear-gradient(to bottom, #00a5502e, #000000);
+        }
+        
+        .form-input:focus {
+            outline: none;
+            ring: 2px;
+            ring-color: #f59e0b;
+        }
+        
+        .login-btn {
+            background: linear-gradient(90deg, #f59e0b 0%, #d97706 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .login-btn:hover {
+            background: linear-gradient(90deg, #d97706 0%, #b45309 100%);
+            transform: translateY(-1px);
+        }
