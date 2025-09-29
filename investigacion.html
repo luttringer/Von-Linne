@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/styles.min.css" />
+  </head>
+
+  <body>
+    <header
+      class="block bg-[#ffffffd1] fixed z-20 w-full h-16 md:flex px-0 md:px-[12%] lg:px-[20%] justify-around md:gap-x-12"
+    >
+      <span class="flex h-full justify-center items-center gap-x-6"
+        ><img
+          class="h-3/6 md:h-4/6 brightness-50"
+          src="src/images/logos/udelar.png"
+          alt="" /><img
+          class="h-3/6 md:h-4/6"
+          src="src/images/logos/urbe.png"
+          alt=""
+      /></span>
+
+      <button
+        id="hamburgerBtn"
+        class="md:hidden fixed top-4 right-6 z-50 w-8 h-8 flex flex-col justify-center items-center space-y-1 focus:outline-none"
+        aria-label="Toggle menu"
+      >
+        <span
+          class="hamburger-line block w-6 h-0.5 bg-gray_three transition-all duration-300 ease-in-out"
+        ></span>
+        <span
+          class="hamburger-line block w-6 h-0.5 bg-gray_three transition-all duration-300 ease-in-out"
+        ></span>
+        <span
+          class="hamburger-line block w-6 h-0.5 bg-gray_three transition-all duration-300 ease-in-out"
+        ></span>
+      </button>
+
+      <nav class="h-full">
+        <ul
+          id="mobileMenu"
+          class="transform md:transform-none translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out md:transition-none w-[80%] md:w-auto h-[calc(100vh-64px)] bg-[#ffffffee] md:bg-inherit ml-[20%] md:ml-0 flex-col md:flex-row justify-center md:justify-normal gap-y-4 md:gap-y-0 flex md:h-full items-center gap-x-7 font-josefin text-gray_three font-normal cursor-pointer"
+        >
+          <li
+            class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4"
+          >
+            Home
+          </li>
+          <li
+            class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4"
+          >
+            Investigación y Desarrollo
+          </li>
+          <li
+            class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4"
+          >
+            Cursos
+          </li>
+          <li
+            class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4"
+          >
+            <a href="login.html">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- banner top index -->
+      <section
+        class="items-center h-[60vh] w-full flex justify-center md:items-end relative"
+        style="
+          background-image: url(src/images/2148205042.jpg);
+          background-size: cover;
+        "
+      >
+        <div
+          class="bg-[#ffffff33] p-5 w-4/5 block md:p-0 md:bg-transparent font-josefin text-center z-10 md:w-1/2 md:mb-[10%] md:flex flex-col justify-center items-center gap-y-5"
+        >
+          <p
+            class="bg-transparent font-light text-yellow_one md:bg-gray_four py-1 px-4"
+          >
+            UDELAR | Facultad de Medicina - URBE
+          </p>
+          <h1
+            class="bg-transparent text-white text-3xl md:bg-gray_four py-1 px-4"
+          >
+            Unidad de Reactivos y Biomodelos de Experimentación
+          </h1>
+        </div>
+      </section>
+
+      <!-- investigación y desarrollo cont -->
+      <section
+        class="w-full mx-auto px-[10%] md:px-16 lg:px-10 py-12 max-w-5xl lg:max-w-7xl"
+      >
+        <h2
+          
+        
+        
+        class="text-center font-josefin text-green_one text-2xl font-semibold m-5"
+        >
+          Investigación y desarrollo
+        </h2>
+
+        <div class="space-y-12 font-josefin text-[17px] text-gray_three">
+          <!-- A) Principales líneas de investigación -->
+          <article aria-labelledby="tit-investigacion">
+            <h3
+              id="tit-investigacion"
+              class="text-xl font-semibold text-green_one mb-3"
+            >
+              A) Principales líneas de investigación
+            </h3>
+
+            <!-- Línea: mosca de los cuernos -->
+            <section class="space-y-3">
+              <h4 class="text-lg font-semibold text-gray-800">
+                Desarrollo de herramientas para el control de la mosca de los
+                cuernos (Haematobia irritans)
+              </h4>
+              <p>
+                La mosca de los cuernos (<em>H. irritans</em>) es un parásito
+                hematófago que afecta a bovinos y genera pérdidas económicas
+                asociadas a caídas en la ganancia de peso y la producción de
+                leche. El trabajo se centra en identificar factores innatos y
+                adaptativos del bovino que confieran resistencia y evaluarlos
+                como herramientas de control, priorizando el desarrollo de
+                vacunas que reduzcan el consumo de sangre de la mosca mediante
+                antígenos salivales o del aparato digestivo.
+              </p>
+              <p>
+                En paralelo se estudian factores fenotípicos del bovino (raza,
+                sexo, color, peso, espesor de epitelio) y el consumo de
+                alimentos con insecticidas naturales (Festucas con endófitos).
+                Se ha comprobado que la saliva de
+                <em>H. irritans</em> contiene moléculas farmacológicamente
+                activas que modulan inflamación y coagulación; por ello se
+                inició la identificación de su potencial farmacológico y
+                aplicaciones terapéuticas en modelos animales. Participan
+                equipos de UdelaR, INIA y la Universidad de San Pablo (Brasil).
+              </p>
+
+              <div class="mt-4 rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <h5 class="font-semibold text-gray-800 mb-2">
+                  Publicaciones recientes
+                </h5>
+                <ol class="list-decimal pl-6 space-y-2 text-[15px] text-gray-700">
+                  <li>
+                    Breijo M, Rocha S, Ures X, Pastro L, Alonzo P, Fernández C,
+                    Meikle A. Evaluation of Hematobin as a Vaccine Candidate to
+                    Control <em>Haematobia irritans</em> (Diptera: Muscidae)
+                    Loads in Cattle.
+                    <em>J Econ Entomol.</em> 2017;110(3):1390-1393.
+                    doi:10.1093/jee/tox104. PMID: 28387808.
+                  </li>
+                  <li>
+                    Breijo M, Pastro L, Rocha S, Ures X, Alonzo P, Santos M,
+                    Bolatto C, Fernández C, Meikle A. A Natural Cattle Immune
+                    Response Against Horn Fly Salivary Antigens May Regulate
+                    Parasite Blood Intake.
+                    <em>J Econ Entomol.</em> 2016;109(4):1951-6.
+                    doi:10.1093/jee/tow133. PMID: 27329632.
+                  </li>
+                  <li>
+                    Breijo M, Rocha S, Ures X, Pedrana G, Alonzo P, Meikle A.
+                    Accessibility of blood affects the attractiveness of cattle
+                    to horn flies. <em>Med Vet Entomol.</em> 2014;28(1):116-8.
+                    doi:10.1111/mve.12008. PMID: 23530916.
+                  </li>
+                </ol>
+              </div>
+            </section>
+
+            <!-- Línea: ratas mutantes -->
+            <section class="space-y-3 mt-8">
+              <h4 class="text-lg font-semibold text-gray-800">
+                Desarrollo y caracterización de la primera línea de ratas
+                mutantes en Uruguay (mielinización)
+              </h4>
+              <p>
+                En la Unidad surgió espontáneamente una mutación en ratas
+                Sprague Dawley que provoca temblores corporales. Se determinó
+                herencia autosómica recesiva y se observó hipomielinización en
+                sistema nervioso central (no detectable en periférico). Los
+                hallazgos fenotípicos e histopatológicos no corresponden a
+                modelos descritos.
+              </p>
+              <p>
+                El proyecto aborda la caracterización histológica e
+                inmunohistoquímica y la identificación de la mutación, aportando
+                conocimiento a procesos hipomielinizantes y habilitando un nuevo
+                modelo para el diseño de tratamientos.
+              </p>
+            </section>
+          </article>
+
+          <!-- B) Extensión universitaria -->
+          <article aria-labelledby="tit-extension">
+            <h3
+              id="tit-extension"
+              class="text-xl font-semibold text-green_one mb-3"
+            >
+              B) Principales actividades en el medio (extensión universitaria)
+            </h3>
+            <p class="mb-3">
+              URBE mantiene una política de puertas abiertas a necesidades del
+              medio. Empresas locales y regionales han solicitado servicios de
+              I+D en: pruebas de actividad biológica de moléculas (hormonas,
+              fármacos), pruebas de potencia de vacunas, desarrollo de modelos
+              experimentales, producción de reactivos biológicos (animales,
+              antisueros, vacunas) y control de nuevos productos.
+            </p>
+
+            <div class="mt-4">
+              <h5 class="font-semibold text-gray-800 mb-2">
+                Organizaciones que han solicitado servicios
+              </h5>
+              <ul class="flex flex-wrap gap-2">
+                <li>
+                  <span
+                    class="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-[13px] text-slate-700"
+                    >Benten Biotech</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-[13px] text-slate-700"
+                    >Biomega</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-[13px] text-slate-700"
+                    >Laboratorios Clausen</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-[13px] text-slate-700"
+                    >Instituto Pasteur Montevideo</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-[13px] text-slate-700"
+                    >Merial</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-[13px] text-slate-700"
+                    >Novartis</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-[13px] text-slate-700"
+                    >Ourofino (Brasil)</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-[13px] text-slate-700"
+                    >Prondil</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-[13px] text-slate-700"
+                    >Laboratorios Santa Elena</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-[13px] text-slate-700"
+                    >Tecnocromo</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-[13px] text-slate-700"
+                    >Syntex</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- contacto -->
+    <footer class="mt-28 bg-blue_one text-white font-extralight">
+      <div
+        class="flex flex-col items-start w-full container m-auto md:grid grid-cols-4 justify-center md:items-start gap-x-[5%] font-josefin py-10 px-[10%] md:px-0 md:py-20 max-w-[1024px]"
+      >
+        <img class="w-[60%] md:w-auto" src="src/images/logos/urbe.png" alt="" />
+        <ul class="font-josefin mt-7 md:mt-0">
+          <li class="mb-1 md:mb-[10px] font-normal">Sitios de interés</li>
+          <li class="text-[13px] md:text-base">URBE</li>
+          <li class="text-[13px] md:text-base">GROBO</li>
+          <li class="text-[13px] md:text-base">FMED</li>
+          <li class="text-[13px] md:text-base">UDELAR</li>
+        </ul>
+        <ul class="font-josefin mt-7 md:mt-0">
+          <li class="mb-1 md:mb-[10px] font-normal">Secciones de la web</li>
+          <li class="text-[13px] md:text-base">Home</li>
+          <li class="text-[13px] md:text-base">Investigación y desarrollo</li>
+          <li class="text-[13px] md:text-base">Cursos</li>
+        </ul>
+        <ul class="font-josefin mt-7 md:mt-0">
+          <li class="mb-1 md:mb-[10px] font-normal">Información de contacto</li>
+          <li class="text-[13px] md:text-base">
+            Direccion: Gral. Flores 2125 C.P. 11800. Montevideo, Uruguay
+          </li>
+          <li class="text-[13px] md:text-base">Tel: 29243414 int 3226</li>
+          <li class="text-[13px] md:text-base">urbemedicina@gmail.com</li>
+        </ul>
+      </div>
+      <div></div>
+    </footer>
+
+    <!-- control scroll-->
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        const ul = document.querySelector("header nav ul");
+        const logoUdelar = document.querySelector(
+          "header span img:first-child"
+        );
+        const logoUrbe = document.querySelector("header span img:last-child");
+        const hamburguesa = document.querySelector("#hamburgerBtn");
+
+        if (window.scrollY > 200) {
+          header.classList.add("scrolled");
+          ul.classList.add("scrolled");
+          logoUdelar.classList.add("scrolled");
+          logoUrbe.classList.add("scrolled");
+          hamburguesa.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+          ul.classList.remove("scrolled");
+          logoUdelar.classList.remove("scrolled");
+          logoUrbe.classList.remove("scrolled");
+          hamburguesa.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+    <!-- funcionalidad menu-->
+    <script>
+      const hamburgerBtn = document.getElementById("hamburgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const overlay = document.getElementById("overlay");
+      const hamburgerLines = document.querySelectorAll(".hamburger-line");
+
+      let isMenuOpen = false;
+
+      function toggleMenu() {
+        isMenuOpen = !isMenuOpen;
+
+        if (isMenuOpen) {
+          // Abrir menú - deslizar desde la derecha
+          mobileMenu.classList.remove("translate-x-full");
+          mobileMenu.classList.add("translate-x-0");
+
+          // Mostrar overlay
+          overlay.classList.remove("invisible", "opacity-0");
+          overlay.classList.add("visible", "opacity-100");
+
+          // Animar hamburguesa a X
+          hamburgerLines[0].classList.add("rotate-45", "translate-y-2");
+          hamburgerLines[1].classList.add("opacity-0");
+          hamburgerLines[2].classList.add("-rotate-45", "-translate-y-2");
+
+          // Prevenir scroll del body
+          document.body.style.overflow = "hidden";
+        } else {
+          // Cerrar menú - deslizar hacia la derecha
+          mobileMenu.classList.remove("translate-x-0");
+          mobileMenu.classList.add("translate-x-full");
+
+          // Ocultar overlay
+          overlay.classList.remove("visible", "opacity-100");
+          overlay.classList.add("invisible", "opacity-0");
+
+          // Restaurar hamburguesa
+          hamburgerLines[0].classList.remove("rotate-45", "translate-y-2");
+          hamburgerLines[1].classList.remove("opacity-0");
+          hamburgerLines[2].classList.remove("-rotate-45", "-translate-y-2");
+
+          // Restaurar scroll del body
+          document.body.style.overflow = "auto";
+        }
+      }
+
+      // Event listeners
+      hamburgerBtn.addEventListener("click", toggleMenu);
+      overlay.addEventListener("click", toggleMenu);
+
+      // Cerrar menú con tecla Escape
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && isMenuOpen) {
+          toggleMenu();
+        }
+      });
+
+      // Cerrar menú al hacer clic en un elemento del menú (opcional)
+      mobileMenu.querySelectorAll("li").forEach((item) => {
+        item.addEventListener("click", () => {
+          if (isMenuOpen) {
+            toggleMenu();
+          }
+        });
+      });
+
+      // Prevenir el cierre al hacer clic dentro del menú
+      mobileMenu.addEventListener("click", function (e) {
+        e.stopPropagation();
+      });
+    </script>
+  </body>
+</html>
