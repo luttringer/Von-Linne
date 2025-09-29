@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
+    <title>URBE | Cursos</title>
+    <link rel="shortcut icon" href="src/images/logos/ico.ico" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
@@ -13,51 +15,29 @@
 </head>
 
 <body>
-    <header
-        class="block bg-[#ffffffd1] fixed z-20 w-full h-16 md:flex px-0 md:px-[12%] lg:px-[20%] justify-around md:gap-x-12">
-        <span class="flex h-full justify-center items-center gap-x-6"><img class="h-3/6 md:h-4/6 brightness-50"
-                src="src/images/logos/udelar.png" alt="" /><img class="h-3/6 md:h-4/6" src="src/images/logos/urbe.png"
-                alt="" /></span>
+    <header class="block bg-[#ffffffd1] fixed z-20 w-full h-16 md:flex px-0 md:px-[12%] lg:px-[20%] justify-around md:gap-x-12">
+        <span class="flex h-full justify-center items-center gap-x-6"><img class="h-3/6 md:h-4/6 brightness-50" src="src/images/logos/udelar.png" alt="" /><img class="h-3/6 md:h-4/6" src="src/images/logos/urbe.png" alt="" /></span>
 
-        <button id="hamburgerBtn"
-            class="md:hidden fixed top-4 right-6 z-50 w-8 h-8 flex flex-col justify-center items-center space-y-1 focus:outline-none"
-            aria-label="Toggle menu">
+        <button id="hamburgerBtn" class="md:hidden fixed top-4 right-6 z-50 w-8 h-8 flex flex-col justify-center items-center space-y-1 focus:outline-none" aria-label="Toggle menu">
             <span class="hamburger-line block w-6 h-0.5 bg-gray_three transition-all duration-300 ease-in-out"></span>
             <span class="hamburger-line block w-6 h-0.5 bg-gray_three transition-all duration-300 ease-in-out"></span>
             <span class="hamburger-line block w-6 h-0.5 bg-gray_three transition-all duration-300 ease-in-out"></span>
         </button>
 
         <nav class="h-full">
-            <ul id="mobileMenu"
-                class="transform md:transform-none translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out md:transition-none w-[80%] md:w-auto h-[calc(100vh-64px)] bg-[#ffffffee] md:bg-inherit ml-[20%] md:ml-0 flex-col md:flex-row justify-center md:justify-normal gap-y-4 md:gap-y-0 flex md:h-full items-center gap-x-7 font-josefin text-gray_three font-normal cursor-pointer">
-                <li
-                    class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">
-                    Home
-                </li>
-                <li
-                    class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">
-                    Investigación y Desarrollo
-                </li>
-                <li
-                    class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">
-                    Cursos
-                </li>
-                <li
-                    class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">
-                    <a href="login.html">Login</a>
-                </li>
+            <ul id="mobileMenu" class="transform md:transform-none translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out md:transition-none w-[80%] md:w-auto h-[calc(100vh-64px)] bg-[#ffffffee] md:bg-inherit ml-[20%] md:ml-0 flex-col md:flex-row justify-center md:justify-normal gap-y-4 md:gap-y-0 flex md:h-full items-center gap-x-7 font-josefin text-gray_three font-normal cursor-pointer">
+                <li class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4"><a href="index.html">Home</a></li>
+                <li class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4"><a href="investigacion.html">Investigación y Desarrollo</a></li>
+                <li class="nav-item--active relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4"><a href="cursos.html">Cursos</a></li>
+                <li class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4"><a href="login.html">Login</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <!-- banner top index -->
-        <section class="items-center h-[60vh] w-full flex justify-center md:items-end relative" style="
-          background-image: url(src/images/2148205042.jpg);
-          background-size: cover;
-        ">
-            <div
-                class="bg-[#ffffff33] p-5 w-4/5 block md:p-0 md:bg-transparent font-josefin text-center z-10 md:w-1/2 md:mb-[10%] md:flex flex-col justify-center items-center gap-y-5">
+        <section class="items-center h-[60vh] w-full flex justify-center md:items-end relative" style="background-image: url(src/images/2148205042.jpg);background-size: cover;">
+            <div class="bg-[#ffffff33] p-5 w-4/5 block md:p-0 md:bg-transparent font-josefin text-center z-10 md:w-1/2 md:mb-[10%] md:flex flex-col justify-center items-center gap-y-5">
                 <p class="bg-transparent font-light text-yellow_one md:bg-gray_four py-1 px-4">
                     UDELAR | Facultad de Medicina - URBE
                 </p>
@@ -169,7 +149,7 @@
     </main>
 
     <!-- contacto -->
-    <footer class="mt-28 bg-blue_one text-white font-extralight">
+    <footer data-sr="down" data-sr-duration="0.6s" data-sr-distance="50px" class="mt-28 bg-blue_one text-white font-extralight">
         <div
             class="flex flex-col items-start w-full container m-auto md:grid grid-cols-4 justify-center md:items-start gap-x-[5%] font-josefin py-10 px-[10%] md:px-0 md:py-20 max-w-[1024px]">
             <img class="w-[60%] md:w-auto" src="src/images/logos/urbe.png" alt="" />
@@ -198,105 +178,9 @@
         <div></div>
     </footer>
 
-    <!-- control scroll-->
-    <script>
-        window.addEventListener("scroll", function () {
-            const header = document.querySelector("header");
-            const ul = document.querySelector("header nav ul");
-            const logoUdelar = document.querySelector(
-                "header span img:first-child"
-            );
-            const logoUrbe = document.querySelector("header span img:last-child");
-            const hamburguesa = document.querySelector("#hamburgerBtn");
-
-            if (window.scrollY > 200) {
-                header.classList.add("scrolled");
-                ul.classList.add("scrolled");
-                logoUdelar.classList.add("scrolled");
-                logoUrbe.classList.add("scrolled");
-                hamburguesa.classList.add("scrolled");
-            } else {
-                header.classList.remove("scrolled");
-                ul.classList.remove("scrolled");
-                logoUdelar.classList.remove("scrolled");
-                logoUrbe.classList.remove("scrolled");
-                hamburguesa.classList.remove("scrolled");
-            }
-        });
-    </script>
-
-    <!-- funcionalidad menu-->
-    <script>
-        const hamburgerBtn = document.getElementById("hamburgerBtn");
-        const mobileMenu = document.getElementById("mobileMenu");
-        const overlay = document.getElementById("overlay");
-        const hamburgerLines = document.querySelectorAll(".hamburger-line");
-
-        let isMenuOpen = false;
-
-        function toggleMenu() {
-            isMenuOpen = !isMenuOpen;
-
-            if (isMenuOpen) {
-                // Abrir menú - deslizar desde la derecha
-                mobileMenu.classList.remove("translate-x-full");
-                mobileMenu.classList.add("translate-x-0");
-
-                // Mostrar overlay
-                overlay.classList.remove("invisible", "opacity-0");
-                overlay.classList.add("visible", "opacity-100");
-
-                // Animar hamburguesa a X
-                hamburgerLines[0].classList.add("rotate-45", "translate-y-2");
-                hamburgerLines[1].classList.add("opacity-0");
-                hamburgerLines[2].classList.add("-rotate-45", "-translate-y-2");
-
-                // Prevenir scroll del body
-                document.body.style.overflow = "hidden";
-            } else {
-                // Cerrar menú - deslizar hacia la derecha
-                mobileMenu.classList.remove("translate-x-0");
-                mobileMenu.classList.add("translate-x-full");
-
-                // Ocultar overlay
-                overlay.classList.remove("visible", "opacity-100");
-                overlay.classList.add("invisible", "opacity-0");
-
-                // Restaurar hamburguesa
-                hamburgerLines[0].classList.remove("rotate-45", "translate-y-2");
-                hamburgerLines[1].classList.remove("opacity-0");
-                hamburgerLines[2].classList.remove("-rotate-45", "-translate-y-2");
-
-                // Restaurar scroll del body
-                document.body.style.overflow = "auto";
-            }
-        }
-
-        // Event listeners
-        hamburgerBtn.addEventListener("click", toggleMenu);
-        overlay.addEventListener("click", toggleMenu);
-
-        // Cerrar menú con tecla Escape
-        document.addEventListener("keydown", function (e) {
-            if (e.key === "Escape" && isMenuOpen) {
-                toggleMenu();
-            }
-        });
-
-        // Cerrar menú al hacer clic en un elemento del menú (opcional)
-        mobileMenu.querySelectorAll("li").forEach((item) => {
-            item.addEventListener("click", () => {
-                if (isMenuOpen) {
-                    toggleMenu();
-                }
-            });
-        });
-
-        // Prevenir el cierre al hacer clic dentro del menú
-        mobileMenu.addEventListener("click", function (e) {
-            e.stopPropagation();
-        });
-    </script>
+    <script src="src/scripts/Schroll.js"></script>
+    <script src="src/scripts/scroll.js"></script>
+    <script src="src/scripts/menu.js"></script>
 </body>
 
 </html>

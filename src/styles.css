@@ -57,6 +57,13 @@ header span img:last-child.scrolled {
 }
 
 
+@layer components {
+    
+  .nav-item--active {
+    @apply text-[#00A550] scale-105 before:w-3/4;
+  }
+}
+
 
 
 

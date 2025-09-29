@@ -3,11 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Title</title>
+        <title>URBE | Home</title>
+        <link rel="shortcut icon" href="src/images/logos/ico.ico" type="image/x-icon">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="dist/styles.min.css">
+
+        
     </head>
     <body>
         <header class="block bg-[#ffffffd1] fixed z-20 w-full h-16 md:flex px-0 md:px-[12%] lg:px-[20%] justify-around md:gap-x-12">
@@ -21,9 +25,9 @@
                 
             <nav class="h-full">
                 <ul id="mobileMenu" class="transform md:transform-none translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out md:transition-none w-[80%] md:w-auto h-[calc(100vh-64px)] bg-[#ffffffee] md:bg-inherit ml-[20%] md:ml-0 flex-col md:flex-row justify-center md:justify-normal gap-y-4 md:gap-y-0 flex md:h-full items-center gap-x-7 font-josefin text-gray_three font-normal cursor-pointer">
-                    <li class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">Home</li>
-                    <li class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">Investigación y Desarrollo</li>
-                    <li class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">Cursos</li>
+                    <li class="nav-item--active relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4"><a href="index.html">Home</a></li>
+                    <li class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4"><a href="investigacion.html">Investigación y Desarrollo</a></li>
+                    <li class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4"><a href="cursos.html">Cursos</a></li>
                     <li class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4"><a href="login.html">Login</a></li>
                 </ul>
             </nav>
@@ -39,7 +43,7 @@
             </section>
 
             <!-- galeria de noticias -->
-            <section class="px-[10%] w-full container m-auto flex flex-col justify-center items-center py-12 md:px-16 max-w-5xl">
+            <section data-sr data-sr-duration="1.2s" data-sr-distance="50px" class="px-[10%] w-full container m-auto flex flex-col justify-center items-center py-12 md:px-16 max-w-5xl">
                 <h2 class="text-center font-josefin text-green_one text-2xl font-semibold m-5">Noticias y novedades en URBE</h2>
                 
                 <p class="font-josefin font-light text-[17px] text-gray_three text-center">
@@ -102,14 +106,14 @@
             </section>
 
             <!-- frase -->
-            <section class="w-full flex flex-col justify-center items-center bg-lavanda_one py-28 px-[10%] md:px-[25%] gap-y-10">
+            <section data-sr data-sr-duration="1.2s" data-sr-distance="50px" class="w-full flex flex-col justify-center items-center bg-lavanda_one py-28 px-[10%] md:px-[25%] gap-y-10">
                 <img src="src/images/icons/quote (1).png" alt="">
                 <p class="font-josefin text-[#A1A1A1] font-light text-2xl text-center">"El objetivo final debe ser la eliminación completa del uso de animales en experimentos, pero mientras tanto debemos reducir al mínimo el sufrimiento animal."</p>
                 <p class="text-green_one font-josefin font-bold text-sm text-center">William Russell y Rex Burch (creadores del principio de las 3 R's).</p>
             </section>
 
             <!-- personal -->
-            <section class="w-full py-16 px-[10%]">
+            <section data-sr data-sr-duration="1.2s" data-sr-distance="50px" class="w-full py-16 px-[10%]">
                 <div class="max-w-7xl mx-auto">
                     <h2 class="font-josefin text-green_one text-2xl font-semibold m-5 text-center">Conocé nuestro equipo de trabajo</h2>
                     
@@ -195,7 +199,7 @@
         </main>
 
         <!-- contacto -->
-        <footer class="mt-28 bg-blue_one text-white font-extralight">
+        <footer data-sr="down" data-sr-duration="0.6s" data-sr-distance="50px" class="mt-28 bg-blue_one text-white font-extralight">
             <div class=" flex flex-col items-start w-full container m-auto md:grid grid-cols-4 justify-center md:items-start gap-x-[5%] font-josefin py-10 px-[10%] md:px-0 md:py-20 max-w-[1024px]">
                 <img class="w-[60%] md:w-auto" src="src/images/logos/urbe.png" alt="">
                 <ul class="font-josefin mt-7 md:mt-0">
@@ -221,102 +225,8 @@
             <div></div>
         </footer>
 
-        <!-- control scroll-->
-        <script>
-            window.addEventListener('scroll', function() {
-                const header = document.querySelector('header');
-                const ul = document.querySelector('header nav ul');
-                const logoUdelar = document.querySelector('header span img:first-child');
-                const logoUrbe = document.querySelector('header span img:last-child');
-                const hamburguesa = document.querySelector('#hamburgerBtn');
-                
-                if (window.scrollY > 200) {
-                    header.classList.add('scrolled');
-                    ul.classList.add('scrolled');
-                    logoUdelar.classList.add('scrolled');
-                    logoUrbe.classList.add('scrolled');
-                    hamburguesa.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                    ul.classList.remove('scrolled');
-                    logoUdelar.classList.remove('scrolled');
-                    logoUrbe.classList.remove('scrolled');
-                    hamburguesa.classList.remove('scrolled');
-                }
-            });
-        </script>
-
-        <!-- funcionalidad menu-->
-        <script>
-                const hamburgerBtn = document.getElementById('hamburgerBtn');
-                const mobileMenu = document.getElementById('mobileMenu');
-                const overlay = document.getElementById('overlay');
-                const hamburgerLines = document.querySelectorAll('.hamburger-line');
-                
-                let isMenuOpen = false;
-                
-                function toggleMenu() {
-                    isMenuOpen = !isMenuOpen;
-                    
-                    if (isMenuOpen) {
-                        // Abrir menú - deslizar desde la derecha
-                        mobileMenu.classList.remove('translate-x-full');
-                        mobileMenu.classList.add('translate-x-0');
-                        
-                        // Mostrar overlay
-                        overlay.classList.remove('invisible', 'opacity-0');
-                        overlay.classList.add('visible', 'opacity-100');
-                        
-                        // Animar hamburguesa a X
-                        hamburgerLines[0].classList.add('rotate-45', 'translate-y-2');
-                        hamburgerLines[1].classList.add('opacity-0');
-                        hamburgerLines[2].classList.add('-rotate-45', '-translate-y-2');
-                        
-                        // Prevenir scroll del body
-                        document.body.style.overflow = 'hidden';
-                    } else {
-                        // Cerrar menú - deslizar hacia la derecha
-                        mobileMenu.classList.remove('translate-x-0');
-                        mobileMenu.classList.add('translate-x-full');
-                        
-                        // Ocultar overlay
-                        overlay.classList.remove('visible', 'opacity-100');
-                        overlay.classList.add('invisible', 'opacity-0');
-                        
-                        // Restaurar hamburguesa
-                        hamburgerLines[0].classList.remove('rotate-45', 'translate-y-2');
-                        hamburgerLines[1].classList.remove('opacity-0');
-                        hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
-                        
-                        // Restaurar scroll del body
-                        document.body.style.overflow = 'auto';
-                    }
-                }
-                
-                // Event listeners
-                hamburgerBtn.addEventListener('click', toggleMenu);
-                overlay.addEventListener('click', toggleMenu);
-                
-                // Cerrar menú con tecla Escape
-                document.addEventListener('keydown', function(e) {
-                    if (e.key === 'Escape' && isMenuOpen) {
-                        toggleMenu();
-                    }
-                });
-                
-                // Cerrar menú al hacer clic en un elemento del menú (opcional)
-                mobileMenu.querySelectorAll('li').forEach(item => {
-                    item.addEventListener('click', () => {
-                        if (isMenuOpen) {
-                            toggleMenu();
-                        }
-                    });
-                });
-                
-                // Prevenir el cierre al hacer clic dentro del menú
-                mobileMenu.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                });
-        </script>
+        <script src="src/scripts/Schroll.js"></script>
+        <script src="src/scripts/scroll.js"></script>
+        <script src="src/scripts/menu.js"></script>
     </body>
 </html>
