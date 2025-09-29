@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="dist/styles.min.css" />
+</head>
+
+<body>
+    <header
+        class="block bg-[#ffffffd1] fixed z-20 w-full h-16 md:flex px-0 md:px-[12%] lg:px-[20%] justify-around md:gap-x-12">
+        <span class="flex h-full justify-center items-center gap-x-6"><img class="h-3/6 md:h-4/6 brightness-50"
+                src="src/images/logos/udelar.png" alt="" /><img class="h-3/6 md:h-4/6" src="src/images/logos/urbe.png"
+                alt="" /></span>
+
+        <button id="hamburgerBtn"
+            class="md:hidden fixed top-4 right-6 z-50 w-8 h-8 flex flex-col justify-center items-center space-y-1 focus:outline-none"
+            aria-label="Toggle menu">
+            <span class="hamburger-line block w-6 h-0.5 bg-gray_three transition-all duration-300 ease-in-out"></span>
+            <span class="hamburger-line block w-6 h-0.5 bg-gray_three transition-all duration-300 ease-in-out"></span>
+            <span class="hamburger-line block w-6 h-0.5 bg-gray_three transition-all duration-300 ease-in-out"></span>
+        </button>
+
+        <nav class="h-full">
+            <ul id="mobileMenu"
+                class="transform md:transform-none translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out md:transition-none w-[80%] md:w-auto h-[calc(100vh-64px)] bg-[#ffffffee] md:bg-inherit ml-[20%] md:ml-0 flex-col md:flex-row justify-center md:justify-normal gap-y-4 md:gap-y-0 flex md:h-full items-center gap-x-7 font-josefin text-gray_three font-normal cursor-pointer">
+                <li
+                    class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">
+                    Home
+                </li>
+                <li
+                    class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">
+                    Investigación y Desarrollo
+                </li>
+                <li
+                    class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">
+                    Cursos
+                </li>
+                <li
+                    class="relative transition-all duration-300 ease-in-out hover:text-[#00A550] hover:scale-105 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-[#00A550] before:transition-all before:duration-300 before:ease-in-out before:-translate-x-1/2 hover:before:w-3/4">
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- banner top index -->
+        <section class="items-center h-[60vh] w-full flex justify-center md:items-end relative" style="
+          background-image: url(src/images/2148205042.jpg);
+          background-size: cover;
+        ">
+            <div
+                class="bg-[#ffffff33] p-5 w-4/5 block md:p-0 md:bg-transparent font-josefin text-center z-10 md:w-1/2 md:mb-[10%] md:flex flex-col justify-center items-center gap-y-5">
+                <p class="bg-transparent font-light text-yellow_one md:bg-gray_four py-1 px-4">
+                    UDELAR | Facultad de Medicina - URBE
+                </p>
+                <h1 class="bg-transparent text-white text-3xl md:bg-gray_four py-1 px-4">
+                    Unidad de Reactivos y Biomodelos de Experimentación
+                </h1>
+            </div>
+        </section>
+
+        <!-- cursos -->
+        <section id="cursos" aria-labelledby="tit-cursos"
+            class="w-full mx-auto px-[10%] md:px-16 lg:px-10 py-12 max-w-5xl lg:max-w-7xl">
+            <h2 id="tit-cursos" class="text-center font-josefin text-green_one text-2xl font-semibold m-5">
+                Cursos
+            </h2>
+
+
+            <div class="space-y-12 font-josefin text-[17px] text-gray_three">
+                <!-- Objetivos -->
+                <article aria-labelledby="tit-objetivos">
+                    <h3 id="tit-objetivos" class="text-xl font-semibold text-green_one mb-3">
+                        Objetivos de los cursos sobre experimentación animal
+                    </h3>
+                    <p>
+                        El uso de animales en investigación y docencia tiene por fin generar conocimiento original,
+                        demostrar en forma práctica conceptos descritos en la teoría y/o generar habilidades o destrezas
+                        que luego son aplicadas en la actividad profesional. Para alcanzar estos objetivos es clave
+                        introducirse en el conocimiento de la variedad de reactivos biológicos y modelos experimentales
+                        disponibles, así como en las condiciones de uso y manejo.
+                    </p>
+                </article>
+
+
+                <!-- Ética y bioseguridad -->
+                <article aria-labelledby="tit-etica">
+                    <h3 id="tit-etica" class="text-xl font-semibold text-green_one mb-3">
+                        Ética y bioseguridad
+                    </h3>
+                    <p>
+                        El uso de animales de experimentación tiene implicancias éticas y de bioseguridad. El animal de
+                        experimentación es un ser sensible y muchos procedimientos afectan su bienestar, por lo que la
+                        actividad está regulada por ley y su uso debe ser totalmente justificado. Además, la actividad
+                        con animales de experimentación implica un riesgo biológico para los usuarios u otros animales;
+                        el conocimiento de los riesgos y las medidas de prevención debe ser internalizado por el
+                        usuario.
+                    </p>
+                    <div class="mt-4 rounded-lg border border-slate-200 bg-slate-50 p-4">
+                        <h4 class="font-semibold text-gray-800 mb-2">Marco normativo y habilitaciones</h4>
+                        <p class="text-[15px] text-gray-700">
+                            De acuerdo con la <strong>Ley 18.611</strong> y la ordenanza universitaria sobre uso y
+                            manejo de animales de experimentación, todo el personal que manipule o experimente con
+                            animales debe contar con una habilitación vigente.
+                        </p>
+                        <ul class="mt-3 flex flex-wrap gap-2">
+                            <li><span
+                                    class="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-[13px] text-slate-700">CHEA
+                                    – MEC (nacional)</span></li>
+                            <li><span
+                                    class="inline-block rounded-full border border-slate-300 bg-white px-3 py-1 text-[13px] text-slate-700">CHEA
+                                    – UdelaR (universitario)</span></li>
+                        </ul>
+                    </div>
+                </article>
+
+
+                <!-- Tipos de cursos -->
+                <article aria-labelledby="tit-tipos">
+                    <h3 id="tit-tipos" class="text-xl font-semibold text-green_one mb-3">
+                        Tipos de cursos
+                    </h3>
+                    <ol class="list-[lower-alpha] pl-6 space-y-2">
+                        <li>
+                            <strong>Cursos de acreditación para el manejo de animales:</strong> orientados a cumplir los
+                            requisitos de habilitación para la experimentación y el cuidado responsable.
+                        </li>
+                        <li>
+                            <strong>Cursos de profundización:</strong> enfocados en el perfeccionamiento de técnicas,
+                            modelos experimentales y áreas específicas del campo.
+                        </li>
+                    </ol>
+                </article>
+
+
+                <!-- Curso anual de URBE -->
+                <article aria-labelledby="tit-urbe">
+                    <h3 id="tit-urbe" class="text-xl font-semibold text-green_one mb-3">
+                        Curso anual de URBE
+                    </h3>
+                    <div class="rounded-xl border border-sky-200 bg-sky-50 p-4">
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span
+                                class="inline-flex items-center rounded-full bg-sky-600/90 px-2.5 py-1 text-xs font-semibold text-white">Desde
+                                2012</span>
+                            <span
+                                class="inline-flex items-center rounded-full bg-emerald-600/90 px-2.5 py-1 text-xs font-semibold text-white">Acredita
+                                A y B</span>
+                        </div>
+                        <p class="text-[15px] text-slate-800">
+                            URBE dicta de forma anual el curso <em>“Modelos biológicos en investigación, docencia y
+                                control de fármacos”</em>, que acredita en las categorías <strong>A</strong> y
+                            <strong>B</strong>. Asimismo, ofrece cursos de posgrado vinculados al uso de modelos
+                            experimentales.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- contacto -->
+    <footer class="mt-28 bg-blue_one text-white font-extralight">
+        <div
+            class="flex flex-col items-start w-full container m-auto md:grid grid-cols-4 justify-center md:items-start gap-x-[5%] font-josefin py-10 px-[10%] md:px-0 md:py-20 max-w-[1024px]">
+            <img class="w-[60%] md:w-auto" src="src/images/logos/urbe.png" alt="" />
+            <ul class="font-josefin mt-7 md:mt-0">
+                <li class="mb-1 md:mb-[10px] font-normal">Sitios de interés</li>
+                <li class="text-[13px] md:text-base">URBE</li>
+                <li class="text-[13px] md:text-base">GROBO</li>
+                <li class="text-[13px] md:text-base">FMED</li>
+                <li class="text-[13px] md:text-base">UDELAR</li>
+            </ul>
+            <ul class="font-josefin mt-7 md:mt-0">
+                <li class="mb-1 md:mb-[10px] font-normal">Secciones de la web</li>
+                <li class="text-[13px] md:text-base">Home</li>
+                <li class="text-[13px] md:text-base">Investigación y desarrollo</li>
+                <li class="text-[13px] md:text-base">Cursos</li>
+            </ul>
+            <ul class="font-josefin mt-7 md:mt-0">
+                <li class="mb-1 md:mb-[10px] font-normal">Información de contacto</li>
+                <li class="text-[13px] md:text-base">
+                    Direccion: Gral. Flores 2125 C.P. 11800. Montevideo, Uruguay
+                </li>
+                <li class="text-[13px] md:text-base">Tel: 29243414 int 3226</li>
+                <li class="text-[13px] md:text-base">urbemedicina@gmail.com</li>
+            </ul>
+        </div>
+        <div></div>
+    </footer>
+
+    <!-- control scroll-->
+    <script>
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            const ul = document.querySelector("header nav ul");
+            const logoUdelar = document.querySelector(
+                "header span img:first-child"
+            );
+            const logoUrbe = document.querySelector("header span img:last-child");
+            const hamburguesa = document.querySelector("#hamburgerBtn");
+
+            if (window.scrollY > 200) {
+                header.classList.add("scrolled");
+                ul.classList.add("scrolled");
+                logoUdelar.classList.add("scrolled");
+                logoUrbe.classList.add("scrolled");
+                hamburguesa.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+                ul.classList.remove("scrolled");
+                logoUdelar.classList.remove("scrolled");
+                logoUrbe.classList.remove("scrolled");
+                hamburguesa.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+    <!-- funcionalidad menu-->
+    <script>
+        const hamburgerBtn = document.getElementById("hamburgerBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const overlay = document.getElementById("overlay");
+        const hamburgerLines = document.querySelectorAll(".hamburger-line");
+
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+
+            if (isMenuOpen) {
+                // Abrir menú - deslizar desde la derecha
+                mobileMenu.classList.remove("translate-x-full");
+                mobileMenu.classList.add("translate-x-0");
+
+                // Mostrar overlay
+                overlay.classList.remove("invisible", "opacity-0");
+                overlay.classList.add("visible", "opacity-100");
+
+                // Animar hamburguesa a X
+                hamburgerLines[0].classList.add("rotate-45", "translate-y-2");
+                hamburgerLines[1].classList.add("opacity-0");
+                hamburgerLines[2].classList.add("-rotate-45", "-translate-y-2");
+
+                // Prevenir scroll del body
+                document.body.style.overflow = "hidden";
+            } else {
+                // Cerrar menú - deslizar hacia la derecha
+                mobileMenu.classList.remove("translate-x-0");
+                mobileMenu.classList.add("translate-x-full");
+
+                // Ocultar overlay
+                overlay.classList.remove("visible", "opacity-100");
+                overlay.classList.add("invisible", "opacity-0");
+
+                // Restaurar hamburguesa
+                hamburgerLines[0].classList.remove("rotate-45", "translate-y-2");
+                hamburgerLines[1].classList.remove("opacity-0");
+                hamburgerLines[2].classList.remove("-rotate-45", "-translate-y-2");
+
+                // Restaurar scroll del body
+                document.body.style.overflow = "auto";
+            }
+        }
+
+        // Event listeners
+        hamburgerBtn.addEventListener("click", toggleMenu);
+        overlay.addEventListener("click", toggleMenu);
+
+        // Cerrar menú con tecla Escape
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && isMenuOpen) {
+                toggleMenu();
+            }
+        });
+
+        // Cerrar menú al hacer clic en un elemento del menú (opcional)
+        mobileMenu.querySelectorAll("li").forEach((item) => {
+            item.addEventListener("click", () => {
+                if (isMenuOpen) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        // Prevenir el cierre al hacer clic dentro del menú
+        mobileMenu.addEventListener("click", function (e) {
+            e.stopPropagation();
+        });
+    </script>
+</body>
+
+</html>
