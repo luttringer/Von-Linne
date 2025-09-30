@@ -68,6 +68,16 @@
                 </div>
             </section>
 
+            <!-- posicionador -->
+            <div id="page-indicator" class="md:hidden fixed bottom-3 inset-x-3 z-40">
+                <div class="mx-auto w-fit rounded-full bg-slate-900/90 text-white px-3 py-2 text-xs font-medium shadow-lg backdrop-blur-sm flex items-center gap-2">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" class="h-4 w-4">
+                        <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                    </svg>
+                    <span id="page-label">Sección</span>
+                </div>
+            </div>
+
             <!-- galeria de noticias -->
             <section data-sr data-sr-duration="1.2s" data-sr-distance="50px" class="px-[10%] w-full container m-auto flex flex-col justify-center items-center py-12 md:px-16 max-w-5xl">
                 <h2 class="text-center font-josefin text-green_one text-2xl font-semibold m-5">Noticias y novedades en URBE</h2>
@@ -254,5 +264,6 @@
         <script src="src/scripts/Schroll.js"></script>
         <script src="src/scripts/scroll.js"></script>
         <script src="src/scripts/menu.js"></script>
+        <script src="src/scripts/posicionador.js"></script>
     </body>
 </html>
